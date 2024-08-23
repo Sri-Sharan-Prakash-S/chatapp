@@ -9,11 +9,8 @@ function App() {
     return <AuthPage onAuth={(user)=>setUser(user)}/>;
   }
   else{
-    return <Chatpage user={user}/>
+    return <Chatpage user={user}/>;
   }
-  return (
-    <div className="app"></div>
-  )
 }
 
 export default App

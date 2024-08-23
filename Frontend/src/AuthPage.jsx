@@ -10,8 +10,18 @@ const AuthPage = (props) => {
         .catch(e=>console.log("error",e))
     }
   return (
-    <div>AuthPage</div>
-  )
-}
+    <div className='background'>
+        <form onSubmit={onSubmit} className="form-card">
+            <div className="form-title">Welcome</div>
+            <div className="form-subtitle">Set a Username to get Started</div>
+            <div className="auth">
+                <div className="auth-label">Username</div>
+                <input type="text" name='username' className="auth-input" />
+                <button className="auth-button" type='submit'>Enter</button>
+            </div>
+        </form>
+    </div>
+  );
+};
 
 export default AuthPage
